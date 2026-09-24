@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Captures are the user's own working data, not part of the skill
+site_capture/
+*.zip
+capture/
