@@ -13,6 +13,31 @@
 
 ---
 
+## Quick start (60 seconds)
+
+1. **Get a free API key** at [enrichr.dev](https://enrichr.dev/?utm_source=github&utm_medium=readme&utm_campaign=skill) (free plan, no card).
+2. **Connect the MCP** to Claude Code:
+
+```bash
+claude mcp add --transport http enrichr https://enrichr.dev/mcp \
+  --header "X-API-Key: enrichr_your-key-here"
+```
+
+3. **Install this skill:**
+
+```bash
+npx skills add chrisjeffries24/claude-enrichr-skill
+```
+
+4. **Ask Claude:**
+
+```text
+Clone the hero section of https://linear.app as a standalone component.
+Capture it first, verify what actually animates, then rebuild it.
+```
+
+Using Cursor, VS Code, Windsurf or ChatGPT instead? Setup for each client is at [enrichr.dev/connect](https://enrichr.dev/connect.html?utm_source=github&utm_medium=readme&utm_campaign=skill). Want to see what a capture finds first? Try the free [font finder](https://enrichr.dev/tools/website-font-finder.html), [palette extractor](https://enrichr.dev/tools/website-color-palette.html) and [animation library checker](https://enrichr.dev/tools/what-animation-library.html), or browse [design breakdowns of 100+ famous sites](https://enrichr.dev/gallery/).
+
 ## Why this exists
 
 The Enrichr MCP is powerful: it renders a page in a real browser and reports what actually happened — computed styles, motion measured by scrolling, shaders compiled on a real GPU, the 3D scene read out of the running renderer. But used naively it produces confident, wrong rebuilds. This skill is the accumulated "how to actually use it" — written from real cloning sessions where each of these mistakes cost real time:
